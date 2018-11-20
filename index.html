@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="/script.js" defer></script>
+</head>  
+<body>
+    <a-scene>
+        
+        <!-- Resource imports -->
+        <a-assets>
+            <a-asset-item id="cat-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fcat.obj?1541589645643"></a-asset-item>
+            <a-asset-item id="lavender-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Flavender_plant.obj?1541598239083"></a-asset-item>
+            <a-asset-item id="old-tree-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fold_tree.obj?1541598907119"></a-asset-item>
+            <a-asset-item id="stoplight-plant-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fstoplight-plant.obj?1541601209376"></a-asset-item>
+            <a-asset-item id="bamboo-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fbamboo.obj?1541603433598"></a-asset-item>
+            <a-asset-item id="torii" src="https://cdn.glitch.com/c29f4d8a-8b3c-48f0-a6f3-af7aa7184076%2Ftorii.obj?1541603367629"></a-asset-item>
+            <a-asset-item id="japanese-lamp-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fjapanese_lamp.obj?1541759729456"></a-asset-item>
+            <a-asset-item id="japanese-lamp-mtl" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Flamp_texture.jpg?1541759851677"></a-asset-item>
+            <a-asset-item id="temple" src="https://cdn.glitch.com/c29f4d8a-8b3c-48f0-a6f3-af7aa7184076%2FD0509013.obj?1541761797002"></a-asset-item>
+            <a-asset-item id="ant-obj" src="https://cdn.glitch.com/942443f6-351f-4240-a9b3-1ebd69316ae5%2Fant.obj?1541763488355"></a-asset-item>
+        </a-assets>
+        
+        <a-entity environment="preset: japan; lightPosition: 3 20 -30; skyColor: #191970; groundColor: #926138; grid: none; skyType: atmosphere"></a-entity>
+        
+        <!-- Mount -->
+        <a-cone src="https://thumbs.dreamstime.com/t/nuit-de-pelouse-de-stade-de-football-de-champ-62392554.jpg" position="8 10.2 -89.5" color="brown" radius-bottom="77.8" radius-top="45.5" height="41"></a-cone>
+        
+        <!-- Stairs -->
+        <a-box position="3.1 0.3 -20" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 1 -20.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 1.7 -21" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 2.4 -21.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 3.1 -22" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 3.8 -22.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 4.5 -23" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 5.2 -23.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 5.9 -24" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 6.6 -24.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 7.4 -25" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 8.1 -25.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 8.8 -26" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 9.5 -26.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 10.2 -27" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 10.9 -27.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 11.6 -28" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 12.3 -28.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 13.0 -29" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 13.7 -29.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 14.4 -30" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 15.1 -30.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 15.8 -31" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 16.5 -31.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 17.2 -32" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 17.9 -32.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 18.6 -33" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 19.3 -33.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 20 -34" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 20.7 -34.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 21.4 -35" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 22.1 -35.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 22.8 -36" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 23.5 -36.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 24.2 -37" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 24.9 -37.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 25.6 -38" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 26.3 -38.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 27 -39" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 27.7 -39.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 28.4 -40" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        <a-box position="3.1 29.1 -40.5" radius="0.5" height="0.7" width="8.5" color="grey"></a-box>
+        
+        <!-- ground custom -->
+        <!-- line1 -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="-4 0.1 -17.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="0 0.1 -17.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="4 0.1 -17.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="8 0.1 -17.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <!-- line2 -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="-4 0.1 -13.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="0 0.1 -13.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="4 0.1 -13.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="8 0.1 -13.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <!-- line3 -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="-4 0.1 -9.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="0 0.1 -9.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="4 0.1 -9.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="8 0.1 -9.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <!-- line4 -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="-4 0.1 -5.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="0 0.1 -5.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="4 0.1 -5.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="8 0.1 -5.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <!-- line5 -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="-4 0.1 -1.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="0 0.1 -1.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="4 0.1 -1.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA"
+        position="8 0.1 -1.5" radius="0.5" height="0.5" width="4" depth="4"></a-box>
+        
+        <!-- Plants gate left -->
+        <a-obj-model src="#lavender-obj" position="-1 0 -15.2" scale="0.002 0.002 0.002" color="#362B83"></a-obj-model>
+        <a-obj-model src="#lavender-obj" position="-0.6 0 -16.9" scale="0.002 0.002 0.002" color="#362B83"></a-obj-model>
+        <a-obj-model src="#stoplight-plant-obj" position="-3.6 0 -14.9" scale="0.04 0.04 0.04" color="#D6C938"></a-obj-model>
+        <a-obj-model src="#stoplight-plant-obj" position="-2.8 0 -14.5" scale="0.04 0.04 0.04" color="#D6C938"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="-3 0 -21.3" scale="0.15 0.15 0.15" color="#7A2C37"></a-obj-model>
+        <a-obj-model id="special-plant" src="#old-tree-obj" position="-3 -0.01 -19" rotation="12 103 -15" scale="0.05 0.05 0.05" color="#ff8600"></a-obj-model>
+        
+        <!-- Plants gate right -->
+        <a-obj-model src="#lavender-obj" position="9.7 0 -17" scale="0.002 0.002 0.002" color="#362B83"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9.7 0 -17" scale="0.05 0.05 0.05" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#lavender-obj" position="6.4 0 -17" scale="0.002 0.002 0.002" color="#362B83"></a-obj-model>
+        <a-obj-model src="#stoplight-plant-obj" position="7.8 0 -15" scale="0.04 0.04 0.04" color="#D6C938"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="9.3 0 -20.4" scale="0.15 0.15 0.15" color="#7A2C37"></a-obj-model>
+        
+        <!-- Plants stairs left -->
+        <a-obj-model src="#bamboo-obj" position="-3 4 -25.6" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 4 -25.6" scale="0.03 0.03 0.03" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 4 -25.6" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 4 -25.6" scale="0.03 0.03 0.03" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="-3 9 -29" scale="0.1 0.1 0.1" color="#7A2C37"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 12 -32" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 12 -32" scale="0.03 0.03 0.03" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 12 -32" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 12 -32" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="-3 18 -36" scale="0.1 0.1 0.1" color="#7A2C37"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="-4 20 -38" scale="0.1 0.1 0.1" color="#7A2C37"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 25 -40" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 25 -40" scale="0.04 0.04 0.04" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 25 -40" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="-3 25 -40" scale="0.03 0.03 0.03" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        
+        <!-- Plants stairs right -->
+        <a-obj-model src="#old-tree-obj" position="9 2 -23" scale="0.1 0.1 0.1" color="#7A2C37" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 5 -25.6" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 5 -25.6" scale="0.04 0.04 0.04" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 5 -25.6" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 5 -25.6" scale="0.03 0.03 0.03" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="9 10 -29" scale="0.1 0.1 0.1" color="#7A2C37" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="12 11 -30" scale="0.1 0.1 0.1" color="#7A2C37" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#old-tree-obj" position="11 13 -32" scale="0.1 0.1 0.1" color="#7A2C37" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="10 15 -34" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="10 15 -34" scale="0.04 0.04 0.04" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="10 15 -34" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="10 15 -34" scale="0.03 0.03 0.03" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 19 -36" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 180 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 19 -36" scale="0.04 0.04 0.04" color="#4D8E12"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 19 -36" scale="0.04 0.04 0.04" color="#4D8E12" rotation="0 90 0"></a-obj-model>
+        <a-obj-model src="#bamboo-obj" position="9 19 -36" scale="0.03 0.03 0.03" color="#4D8E12" rotation="0 -90 0"></a-obj-model>
+        
+        <!-- First Torii -->
+        <a-obj-model src="#torii" position="3 6.8 -24" scale="7 10 7" color="#7A2C37"></a-obj-model>
+        <a-entity id="panel-first-step" >
+            <a-box position="3.25 15.8 -24" radius="0.5" height="0.1" width="7" depth="3" color="black" rotation="90 0 0"></a-box>
+            <a-text position="2.9 14.5 -23" value="Step 1" color="white" rotation="90 0 0"></a-text>
+            <a-text position="1.4 14.8 -23.7" value="Find a special plant" color="white" rotation="45 0 0" scale="1.55 2 2" width="5"></a-text>
+        </a-entity>
+        
+        <a-obj-model id="japanese-lamp" src="#japanese-lamp-obj" mtl="#japanese-lamp-mtl" position="6.8 16.85 -31" scale="0.01 0.01 0.01" color="grey"></a-obj-model>
+        
+        <!-- Second Torii -->
+        <a-obj-model src="#torii" position="3 17 -32" scale="7 10 7" color="#7A2C37"></a-obj-model>
+        <a-entity id="panel-second-step">
+            <a-box position="3.25 26 -32" radius="0.5" height="0.1" width="7" depth="3" color="black" rotation="90 0 0"></a-box>
+            <a-text position="2.9 26.2 -31.9" value="Step 2" color="white" scale="1 2 2"></a-text>
+            <a-text position="1.5 25.4 -31.9" value="Find a typical japanese object" color="white" scale="1.55 2 2" width="5"></a-text>
+        </a-entity>
+        
+        <a-obj-model id="insect" src="#ant-obj" color="black" position="7.6 29 -33" rotation="0 90 90" scale="3 3 3" ></a-obj-model>
+        
+        <!-- Third Torii -->
+        <a-obj-model src="#torii" position="3 28 -40" scale="7 10 7" color="#7A2C37"></a-obj-model>
+        <a-entity id="panel-third-step">
+            <a-box position="3.25 37 -40" radius="0.5" height="0.1" width="7" depth="3" color="black" rotation="90 0 0"></a-box>
+            <a-text position="3 37 -39.9" value="Step 3" color="white" rotation="0 0 0" scale="1 2 2"></a-text>
+            <a-text position="2.6 36.3 -39.9" value="Find an insect" color="white" rotation="0 0 0" scale="1 2 2"></a-text>
+        </a-entity>
+        
+        <!-- First panel -->
+        <a-entity id="first-panel">
+            <a-obj-model src="#torii" position="-2 0 -5" scale="2 2 4" color="#7A2C37" rotation="0 45 0"></a-obj-model>
+            <a-box position="-1.9 1.5 -5" radius="0.5" height="0.1" width="2" color="black" rotation="90 0 135"></a-box>
+            <a-text class="firstPanel" position="-2.18 1.55 -4.43" value="Click to start" text-geometry="font: #dawningFont;" color="white" rotation="0 45 0" scale="1 2 2"></a-text>
+        </a-entity>
+        
+        <!-- Temple -->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUxsdwWFzjRZjuCNBRjLRSrIoFo1g7YA7m05iyB-FDW0D6VagRA" position="3.5 30.4 -43.2" radius="0.5" height="0.5" width="10" depth="4.3" rotation="8 0 0"></a-box>
+        <a-entity>
+            <a-box position="4 33 -49.2" radius="0.5" height="0.1" width="3" depth="1" color="black" rotation="90 0 0" scale="" visible="" material="" geometry=""></a-box>
+            <a-text position="3.5 33 -49" value="The End" color="white" rotation="0 0 0" scale="1 2 2" visible="" text=""></a-text>
+        </a-entity>
+        <a-entity>
+            <a-obj-model src="#temple" position="4 31 -65" scale="0.4 0.4 0.4" color="#7A2C37" rotation="0 0 0"></a-obj-model>
+        </a-entity>
+        
+        <!-- User & cat -->
+        <a-entity id="camera-entity" position="2.71 1 -0.5" start-listener step-listener>  
+            <a-camera>
+                <a-cursor fuse="false" id="cursor" color="black"></a-cursor>
+                <a-sound src="src: url(https://cdn.glitch.com/ca90eca6-8f19-4570-8631-13524f909ba3%2Fsenbonzakura.mp3?1541772099900)" autoplay="true" position="0 2 5"></a-sound>
+            </a-camera>
+        </a-entity>
+        
+    </a-scene>
+</body>
+</html>
